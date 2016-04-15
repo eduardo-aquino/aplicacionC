@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Aplicacion</title>
+ 
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+ 
+<body onLoad="MM_preloadImages('imagenes/8.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+     <h1>Volcan Popocatepetl</h1>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:960px;height:180px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+  
+<div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>UBICACION</h2>
+    <p>Se muestra la ubicacion</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>DIMENCIONES</h2>
+       <p>Se muestra al dimencion</p>
+       </a>
+     </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>DEPENDENCIAS QUE LA MONITOREAN</h2>
+      <p>MONITOREO</p>
+      </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>MEDIDAS PREVENTIVAS EN CASO DE CAIDA DE CENIZA Y EN CASO DE HERUPCION</h2>
+      <p>MEDIDAS</p>
+      </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>VOLCAN DE COLIMA</h2>
+      <p>INFORMACION</p>
+      </a>
+      </li>
+   </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div></div>
+   <div>
+     <h4>Aplicacion 3</h4>
+     <h2>VOLCAN POPOCATEPETL </h2>
+     <h4>Eduardo Aquino Dolores</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>UBICACION</h1>
+  </div>
+ <div data-role="content" align="center">
+  <div>
+     <h2>El Popocatépetl (en náhuatl: popocatepetl, ‘el cerro que humea’‘popoca, humear; tepetl, cerro’)? es un volcán activo localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México. Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala.3
+
+Tiene una forma cónica simétrica y está unido por la parte norte con el Iztaccíhuatl mediante un paso montañoso conocido como Paso de Cortés. El volcán tiene glaciares perennes cerca de la boca del cono, en la punta de la montaña. Es el segundo volcán más alto de México, con una altitud máxima de 5500 metros sobre el nivel del mar, sólo después del Citlaltépetl de 5610 msnm.</h2>
+     <p><img src="imagenes/6.jpg" width="400" height="400"></p>
+  </div>
+ </div>
+<div data-role="footer" data-theme="a">
+  <h4>Aplicacion tres, EAD</h4>
+  </div>
+</div>
+</div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>DIMENCIONES</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>De apariencia casi simétrica, cubre una superficie de 283,192.53 hectáreas y tiene una altura de 5,426 metros sobre el nivel del mar. Posee un cráter elíptico de paredes empinadas con una profundidad de 150 metros desde el labio inferior, un diámetro mayor de 900 metros y un ancho total de 400 x 600 metros.
+El paisaje en la zona que rodea al Popocatépetl contiene varios tipos de ecosistemas con rica variedad de flora y fauna. Hay bosques mixtos de pino, oyamel y encino, donde coexisten hasta 1,000 especies de plantas. Sobre el cono, principalmente cerca de la boca, se encuentran glaciares que durante los últimos años han disminuido.</h2>
+ <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','imagenes/8.jpg',1)"><img src="imagenes/7.jpg" width="400" height="300" id="Image3"></a></p>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion tres, EAD</h4>
+ </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>DEPENDENCIAS QUE LO MONITOREAN</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>Monitoreo del volcán Popocatépetl, se han identificado 74 exhalaciones de baja intensidad y una explosión ayer a las 22:48 h.Se tuvo visibilidad parcial y se observó que los vientos dispersaron las emisiones de manera preferencial al este-sureste.Durante la noche se observó ligera incandescencia que aumentaba al momento de algunas de las exhalaciones. </h2>
+ <p><img src="imagenes/11.jpg" width="448" height="370"></p>
+ <p><img src="imagenes/12.jpg" width="446" height="336"></p>
+ <p><a href="http://www.cenapred.unam.mx:8080/monitoreoPopocatepetl/">http://www.cenapred.unam.mx:8080/monitoreoPopocatepetl/</a></p>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion tres, EAD</h4>
+ </div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>MEDIDAS PREVENTIVAS EN CASO DE CAIDA DE CENIZA</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>En conferencia de prensa, el secretario de Protección Civil, Fausto Lugo, detalló que ante esta situación el gobierno local tiene listas 750 brigadas y se repartirán 500 mil cubrebocas, además de que se vigilarán las delegaciones Milpa Alta, Tláhuac, Xochimilco, Tlalpan, Iztapalapa y Venustiano Carranza.
+
+Asimismo, precisó que se establecerían protocolos de actuación en escuelas y edificios públicos, y dio a conocer algunas recomendaciones a la población en caso de caída abundante de ceniza volcánica, entre ellas: cerrar depósitos de agua, proteger ojos, nariz y boca, ya que ésta puede provocar afectaciones al sistema respiratorio.</h2>
+ <p><img src="imagenes/9.jpg" width="320" height="240"><img src="imagenes/10.jpg" width="250" height="241"></p>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion tres, EAD</h4>
+ </div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>VOLCAN DE COLIMA</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>El volcán de colima es un estratovolcán ubicado en los límites de los estados de Colima y Jalisco, en México. El volcán de Colima o volcán de Fuego se eleva entre 3870 y 3940 msnm, y su altura se encuentra en un constante cambio gracias a la constante actividad que ha presentado durante los últimos años; por eso resulta difícil decir con exactitud cuál es en estos momentos.</h2>
+ <p><img src="imagenes/13.jpg" width="400" height="418"></p>
+ </div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>ubicacion</h1>
+<div>
+
+  <p><img src="imagenes/16.jpg" width="400" height="300"></p>
+  <p>A lo largo de 500 años, el volcán ha tenido más de 40 explosiones desde 1576, de entre las cuales destacan las de 1585, 1606, 1622, 1690, 1818, 1890, 1903, 1913 (el 13 de enero de ese año se cerró el cuarto ciclo de actividad) y 1999. El 6 de junio del 2005, a las 11.00 (hora local), se produjo una columna eruptiva que alcanzó 4 km sobre el volcán, arrojó cenizas de roca y piroclastos, y desde principios de enero del 2013 se ha clasificado en actividad creciente (se produjo una explosión estruendosa el día 29). Su ciclo eruptivo es de aproximadamente 100 años; en 2015 comenzó a presentar un aumento en su actividad que está en constante vigilancia.<br>
+  </p>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion tres, EAD</h4>
+ </div>
+ </div>
+</div>
+</body>
+ </html>
